@@ -1,0 +1,73 @@
+@font-face {
+        font-family: "CursedTimer";
+        src: url("CursedTimerUlil-Aznm.ttf");
+        }
+
+.lcd-font {
+    font-family: "CursedTimer"
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #1B244A;
+}
+
+.scoreboard { /*KEEPS ALL VISIBLE UI TOGETHER*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-container { /*FLEX DISPLAY FOR HOME & GUEST SCORE DISPLAY & BUTTONS*/ 
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0 30px 0;
+}
+
+.team-name { /*TEAM NAME STYLING*/
+    font-size: 40px;
+    font-weight: 700;
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.score-el { /*DISPLAYS THE SCORE AS BIG LCD NUMBERS*/
+    font-size: 90px;
+    color: #F94F6D;
+    background: #080001;
+    border: 2px solid #080001;
+    border-radius: 5px;
+    width: 155px;
+    margin: 18px 50px 25px;
+    padding: 12px 0 0 0;
+    text-align: center;
+}
+
+.pts-button { /*ADD POINTS BUTTONS STYLING*/
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: #1B244A;
+    padding: 10px 10px 9px 9px;;
+    font-family: "CursedTimer";
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.ctrl-button { /*CURRENTLY ONLY FOR 'NEW GAME' BUTTON*/
+    text-shadow: 0 0 1px #6EE7B730;
+    color: #10B981;
+    border: 2px solid #064E3B;
+    border-radius: 5px;
+    background: #065F46;
+    padding: 7px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.winner { /* ADJUST BORDER COLOR FOR THE TEAM WITH MORE POINTS*/
+    border: 2px solid #FDE68A90;
+}

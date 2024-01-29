@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>B-Ball score counter</title>
+    </head>
+    <body>
+        <section class="scoreboard"> <!--CONTAINS ALL VISIBLE UI-->
+            <div class="horizontal-container"> <!--SCOREBOARD & ADD POINTS BUTTONS-->
+                <div>
+                    <!--HOME TEAM SIDE-->
+                    <h3 class="team-name">HOME</h3>
+                    <p class="score-el lcd-font" id="home-score-el">0</p>
+                    <div>
+                        <button class="pts-button" onclick="updateScore('home', 1)">+1</button>
+                        <button class="pts-button" onclick="updateScore('home', 2)">+2</button>
+                        <button class="pts-button" onclick="updateScore('home', 3)">+3</button>
+                    </div>  
+                </div>
+                <div>
+                     <!--GUEST TEAM SIDE-->
+                    <h3 class="team-name">GUEST</h3>
+                    <p class="score-el lcd-font" id="guest-score-el">0</p>
+                    <div>
+                        <button class="pts-button" onclick="updateScore('guest', 1)">+1</button>
+                        <button class="pts-button" onclick="updateScore('guest', 2)">+2</button>
+                        <button class="pts-button" onclick="updateScore('guest', 3)">+3</button>
+                    </div>
+                </div>
+            </div> <!--END OF "CONTAINTER" CLASS DIV-->
+            <footer> <!--"NEW GAME" AND OTHER POTENTIAL BUTTONS-->
+                <button class="ctrl-button" onclick="resetScore()">NEW GAME</button>
+            </footer>
+        </section> <!--END OF "SCOREBOARD" SECTION AND VISIBLE UI-->
+        <script src="index.js"></script>
+    </body>
+</html>
