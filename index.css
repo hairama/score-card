@@ -69,5 +69,6 @@ body {
 }
 
 .winner { /* ADJUST BORDER COLOR FOR THE TEAM WITH MORE POINTS*/
-    border: 2px solid #FDE68A90;
+    /* border: 2px solid #FDE68A90; */
+    box-shadow: 0 0 30px #FDE68A;
 }
